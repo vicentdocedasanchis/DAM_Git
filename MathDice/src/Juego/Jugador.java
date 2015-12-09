@@ -1,9 +1,10 @@
+package Juego;
 import javax.security.auth.callback.TextOutputCallback;
 import javax.swing.JTextField;
 
 public class Jugador {
-	
-	// Propiedades del jugador. Son privadas, sólo son accesibles a través de sus métodos
+
+	// PROPIEDADES del jugador
 	private String nombre; // Almacenara el nombre de un jugador
 	private String apellidos; // Almacenara los apellidos de un jugador
 	private int puntuacion; // Almacenara la puntuacion del jugador
@@ -13,9 +14,7 @@ public class Jugador {
 
 	}// Fin del constructor.
 
-	// Metodos setters y getters. Son públicos se puede acceder a las propiedades de la clase por medio de objetos de la clase
-	// En general los set esperan un argumento(pon algo)y lo guardan
-	// En general los get devuelven el argumento y lo muestran
+	// METODOS setters y getters. 
 	public String getNombre() {
 		return nombre;
 	}
@@ -46,8 +45,14 @@ public class Jugador {
 	}
 
 	public void setEdad(int edad) {
-		
-		this.edad = edad;
+
+		if (edad < 0) {
+			this.edad = 1;
+
+		} else {
+			this.edad = edad;
+		}
+
 	}
 
 }// Fin de la clase Jugador.
