@@ -11,8 +11,8 @@ import javax.swing.JLabel;
 public class Juego extends JFrame {
 
 	private JPanel contentPane;
-	// hago public la propiedad para que la referencia ventanaJuego pueda acceder al objeto msjJugador
-	public JLabel msjJugador;
+	
+	private JLabel msjJugador;
 
 	/**
 	 * Create the frame.
@@ -33,4 +33,9 @@ public class Juego extends JFrame {
 		contentPane.add(msjJugador);
 		
 	}
+
+	public JLabel getMsjJugador() {
+		return msjJugador;
+	}
+	
 }

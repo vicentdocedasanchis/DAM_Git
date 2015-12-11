@@ -122,7 +122,9 @@ public class Login extends JFrame {
 					 * 
 					 */
 					
-					ventanaJuego.msjJugador.setText("Bienvenido al juego " +  nuevoJug.getNombre() );
+					
+					//ventanaJuego.msjJugador.setText("Bienvenido al juego " +  nuevoJug.getNombre() );
+					ventanaJuego.getMsjJugador().setText("Bienvenido al juego " +  nuevoJug.getNombre() );
 					
 					//llamo al método dispose() y cierro la ventana login
 					//referenciaLogin.dispose();
